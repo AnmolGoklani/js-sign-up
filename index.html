@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up Form</title>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+</head>
+<body>
+
+    <h1>SIGN UP</h1>
+    <form action="#" method="get" onsubmit="return ValidateForm()">
+
+
+        <div>
+
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" placeholder="Enter name">
+
+        </div>
+
+        <div>
+
+            <label for="age">Age: </label>
+            <input type="number" id="age" name="age" min="0" placeholder="0">
+
+        </div>
+
+        <div>
+
+            <label>Gender: </label>
+            <input type="radio" name="gender"> Male 
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Prefer not to say
+
+        </div>
+        
+        <div>
+
+            <label for="qualification">Educational Qualification: </label>
+            <select id="qualification" name="Educational Qualification">
+
+                <option value="">Select</option>
+                <option value="High School">High School</option>
+                <option value="Bachelor's Degree">Bachelor's Degree</option>
+                <option value="Master's Degree">Master's Degree</option>
+                <option value="PhD">PhD</option>
+                <option value="None">None</option>
+
+
+            </select>
+
+        </div>
+
+        <div>
+
+            <label for="number">Phone Number (+91): </label>
+            <input type="text" id="number" name="phone number" placeholder="Enter phone number">
+
+        </div>
+
+        <div>
+
+            <label for="email">Email: </label>
+            <input type="text" id="email" name="email" placeholder="Enter email">
+
+        </div>
+
+        <div>
+
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" placeholder="Atleast 8 characters">
+
+        </div>
+
+        <div>
+
+            <label for="confirmpassword">Confirm Password: </label>
+            <input type="password" id="confirmpassword" name="confirm password" placeholder="Confirm your password">
+
+        </div>
+
+        <div>
+
+            <label for="city">City: </label>
+            <input type="text" id="city" name="city" placeholder="Enter city">
+
+
+        </div>
+
+        <button type="submit">SIGN UP</button>
+    
+    </form>
+
+
+    <div id="errors"></div>
+
+
+
+</body>
